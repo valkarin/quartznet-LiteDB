@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <ProjectGuid>{D92EF929-827C-4F41-BECA-5191534943B9}</ProjectGuid>
+        <ProjectGuid>2AE8CA58-FCB2-4646-B33B-DCF99279D90D</ProjectGuid>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <AssemblyTitle>Quartz.Impl.LiteDB.Tests</AssemblyTitle>
         <Product>Quartz.Impl.LiteDB.Tests</Product>

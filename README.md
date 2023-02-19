@@ -1,4 +1,6 @@
 # Quartz.NET-LiteDB
+[![Build status](https://ci.appveyor.com/api/projects/status/f72w6n320hkufv8j?svg=true)](https://ci.appveyor.com/project/valkarin/quartznet-litedb)
+
 JobStore implementation for Quartz.NET scheduler using LiteDB.
 ## About
 [Quartz.NET](https://github.com/quartznet/quartznet) is a full-featured, open source job scheduling system that can be used from smallest apps to large scale enterprise systems.
