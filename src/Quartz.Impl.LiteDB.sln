@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quartz.Impl.LiteDB", "Quartz.Impl.LiteDB\Quartz.Impl.LiteDB.csproj", "{37527461-7655-4DAE-9F3D-A39414C86F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quartz.Impl.LiteDB.Tests", "Quartz.Impl.LiteDB.Tests\Quartz.Impl.LiteDB.Tests.csproj", "{93674C41-666F-4D72-B1CD-E6014AC78EC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quartz.Impl.LiteDb.WorkerExample", "Quartz.Impl.LiteDb.WorkerExample\Quartz.Impl.LiteDb.WorkerExample.csproj", "{46FFD42F-DC77-44F1-95BB-962F9FC0C04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quartz.Impl.LiteDB.ConsoleExample", "Quartz.Impl.LiteDB.ConsoleExample\Quartz.Impl.LiteDB.ConsoleExample.csproj", "{4C878CB8-D4CD-45EC-9BDB-FD24BA0EB743}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37527461-7655-4DAE-9F3D-A39414C86F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37527461-7655-4DAE-9F3D-A39414C86F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37527461-7655-4DAE-9F3D-A39414C86F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37527461-7655-4DAE-9F3D-A39414C86F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93674C41-666F-4D72-B1CD-E6014AC78EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93674C41-666F-4D72-B1CD-E6014AC78EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93674C41-666F-4D72-B1CD-E6014AC78EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93674C41-666F-4D72-B1CD-E6014AC78EC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46FFD42F-DC77-44F1-95BB-962F9FC0C04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46FFD42F-DC77-44F1-95BB-962F9FC0C04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46FFD42F-DC77-44F1-95BB-962F9FC0C04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46FFD42F-DC77-44F1-95BB-962F9FC0C04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C878CB8-D4CD-45EC-9BDB-FD24BA0EB743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C878CB8-D4CD-45EC-9BDB-FD24BA0EB743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C878CB8-D4CD-45EC-9BDB-FD24BA0EB743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C878CB8-D4CD-45EC-9BDB-FD24BA0EB743}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

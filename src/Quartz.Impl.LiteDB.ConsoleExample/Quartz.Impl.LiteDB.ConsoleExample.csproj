@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net461</TargetFramework>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <AssemblyTitle>Quartz.Impl.LiteDB.ConsoleExample</AssemblyTitle>
+        <Product>Quartz.Impl.LiteDB.ConsoleExample</Product>
+        <Copyright>Copyright ©  2023</Copyright>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Quartz" Version="3.6.0" />
+        <PackageReference Include="Quartz.Serialization.Json" Version="3.6.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\Quartz.Impl.LiteDB\Quartz.Impl.LiteDB.csproj" />
+    </ItemGroup>
+
+</Project>

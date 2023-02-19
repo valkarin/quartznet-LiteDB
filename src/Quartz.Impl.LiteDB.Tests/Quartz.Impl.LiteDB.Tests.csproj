@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ProjectGuid>{D92EF929-827C-4F41-BECA-5191534943B9}</ProjectGuid>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AssemblyTitle>Quartz.Impl.LiteDB.Tests</AssemblyTitle>
+        <Product>Quartz.Impl.LiteDB.Tests</Product>
+        <Copyright>Copyright © 2023</Copyright>
+        <OutputPath>bin\$(Configuration)\</OutputPath>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="FluentAssertions" Version="6.9.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+        <PackageReference Include="Quartz" Version="3.6.0" />
+        <PackageReference Include="xunit" Version="2.4.2" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="coverlet.collector" Version="3.2.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Quartz.Impl.LiteDB\Quartz.Impl.LiteDB.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="xunit.runner.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
