@@ -4,6 +4,8 @@ using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using LiteDB;
+using LiteDB.Async;
 using Quartz.Impl.LiteDB.Domains;
 using Quartz.Impl.LiteDB.Domains.Comparators;
 using Quartz.Impl.LiteDB.Extensions;
@@ -15,7 +17,7 @@ namespace Quartz.Impl.LiteDB
 {
     public partial class LiteDbJobStore
     {
-        public Task Initialize(ITypeLoadHelper loadHelper, ISchedulerSignaler signaler,
+        public async Task Initialize(ITypeLoadHelper loadHelper, ISchedulerSignaler signaler,
             CancellationToken cancellationToken = new CancellationToken())
         {
             _signaler = signaler;
@@ -23,7 +25,16 @@ namespace Quartz.Impl.LiteDB
             _typeLoadHelper = loadHelper;
             _typeLoadHelper.Initialize();
             RegisterCustomTypes();
-            return Task.CompletedTask;
+            _connectionString ??= new ConnectionString(ConnectionString)
+            {
+                Connection = ConnectionType.Shared
+            };
+            if (!System.IO.File.Exists(_connectionString.Filename)) // Create initial database.
+            {
+                var db = new LiteDatabaseAsync(_connectionString);
+                await db.GetCollectionNamesAsync();
+                db.Dispose();
+            }
         }
 
         public async Task SchedulerStarted(CancellationToken cancellationToken = new CancellationToken())
