@@ -1,5 +1,6 @@
 # Quartz.NET-LiteDB
 [![Build status](https://ci.appveyor.com/api/projects/status/f72w6n320hkufv8j?svg=true)](https://ci.appveyor.com/project/valkarin/quartznet-litedb)
+![Nuget](https://img.shields.io/nuget/v/Quartznet-LiteDB?style=plastic)
 
 JobStore implementation for Quartz.NET scheduler using LiteDB.
 ## About
